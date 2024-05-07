@@ -37,7 +37,8 @@ az storage account create \
 --name $storageAccount \
 --resource-group $resourceGroup \
 --location $location \
---sku Standard_LRS
+--sku Standard_LRS \
+--kind StorageV2
 
 echo "Storage account created: $storageAccount"
 
