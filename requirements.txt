@@ -6,4 +6,4 @@ opencensus==0.11.4
 opencensus-ext-logging==0.1.0
 itsdangerous==2.0.1
 werkzeug==2.0.3
-opencensus-ext-requests==0.8.0
+# opencensus-ext-requests==0.8.0
