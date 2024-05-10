@@ -3,7 +3,7 @@
 # Variables
 resourceGroup="acdnd-c4-project"
 location="westus"
-osType="Ubuntu2204"
+osType="Canonical:0001-com-ubuntu-server-focal:20_04-lts-gen2:latest"
 vmssName="udacity-vmss"
 adminName="udacityadmin"
 storageAccount="udacitydiag$RANDOM"
@@ -60,6 +60,7 @@ az vmss create \
   --name $vmssName \
   --image $osType \
   --vm-sku $vmSize \
+  --orchestration-mode Uniform \
   --nsg $nsgName \
   --subnet $subnetName \
   --vnet-name $vnetName \
